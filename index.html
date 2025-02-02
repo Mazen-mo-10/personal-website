@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Mazen Mohamed</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="./video-loop.mp4" type="video/mp4" />
+      </video>
+
+      <header class="header">
+        <label for="menu" class="burger-menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a class="navigation__link navigation__bio" href="#bio">Bio</a>
+            </li>
+            <li>
+              <a class="navigation__link navigation__skills" href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__media" href="#media"
+                >Media</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__projects" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__clients" href="#clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__contact" href="#contact">
+                Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input id="toggle" class="toggle__checkbox" type="checkbox" />
+          <label class="toggle__label" for="toggle"></label>
+        </div>
+      </header>
+
+      <section id="bio" class="section bio">
+        <div class="bio__data">
+          <h1 class="bio__heading">
+            Hi There, I’M A Passionate Software Engineer
+          </h1>
+          <p class="bio__objective">
+            My name is <span class="bio__name">Mazen Mohamed</span>
+            ,Software Engineer and Frontend developer who publish content on
+            <a
+              href="https://www.facebook.com/share/1DuL1sMv21/"
+              class="bio__facebook"
+              >Facebook</a
+            >
+            <a
+              href="https://www.linkedin.com/in/mazenmohamed2212"
+              class="bio__linkedin"
+              >Linkedin</a
+            >
+            and
+            <a href="https://github.com/Mazen-mo-10" class="bio__github"
+              >GitHub</a
+            >
+          </p>
+          <a class="bio__links say-hi-link" href="#contact">Say Hi</a>
+          <a class="bio__links find-out-link" href="#">
+            Download CV <span class="bio__arrow">↓</span>
+          </a>
+        </div>
+        <div class="bio__pic-content">
+          <img
+            class="bio__pic"
+            src="./images/pers_img.png"
+            alt="image of Mazen Mohamed"
+          />
+        </div>
+      </section>
+      <section id="skills" class="skills section section--with-bg">
+        <h2 class="h2-heading">Skills</h2>
+
+        <ul class="skills__list">
+          <li class="skills__item">
+            <h2 class="skills__title">HTML</h2>
+            <span class="skills__years">3 Years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">CSS</h2>
+            <span class="skills__years">3 Years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Javascript</h2>
+            <span class="skills__years">1 Years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Problem Solving</h2>
+            <span class="skills__years">2 Years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Algorithms</h2>
+            <span class="skills__years">1 Years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">AI & ML By Bython</h2>
+            <span class="skills__years">1 Years</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="media" class="media section">
+        <video
+          class="media__video"
+          src="./my_vidio.mp4"
+          poster="./images/tamnel.jpg"
+          controls
+        ></video>
+      </section>
+
+      <section id="projects" class="projects section">
+        <h2 class="h2-heading">My Projects</h2>
+        <div class="projects__main">
+          <img class="projects__img" src="./images/Recipe.jpg" alt="Recipe" />
+          <div class="projects__data">
+            <h3 class="h3-heading">The Recipe</h3>
+            <p class="projects__description">
+              This is a website with a recipe for how to make it from scratch,
+              using the first ingredients and time, and it has a picture to show
+              the final appearance
+            </p>
+            <a
+              href="https://mazen-mo-10.github.io/-Task-Recipe/"
+              class="projects__links"
+              target="_blank"
+              >Chrome Link</a
+            >
+          </div>
+
+          <div class="projects__data">
+            <h3 class="h3-heading">Advertisement for perfume</h3>
+            <p class="projects__description">
+              An advertisement for a wonderful French perfume that has all the
+              features of the perfume and a slightly discounted price
+            </p>
+            <a
+              href="https://mazen-mo-10.github.io/Product-Preview-Card-Component/"
+              class="projects__links"
+              target="_blank"
+              >Chrome Link</a
+            >
+          </div>
+          <img
+            class="projects__img"
+            src="./images/AD-Perfume.jpg"
+            alt="Advertisement for perfume"
+          />
+        </div>
+      </section>
+
+      <section id="clients" class="clients section section--with-bg">
+        <h2 class="h2-heading">
+          What My<br />
+          Clients says
+        </h2>
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients__opinions">
+              Mazen is the best student at the university. He has a wonderful
+              enthusiasm and love for programming and can learn and teach
+              anything related to programming.
+            </p>
+            <p class="clients__opinions">
+              Mazen loves creating websites and even devotes his free time to
+              his projects and courses. When he wants to make any website, he
+              can do it in the best way and it will amaze you.
+            </p>
+            <p class="clients__opinions">
+              Mazen loves the minute details in his sites and loves to see
+              customers amazed by the quality of the site, and also his code is
+              very clean and comfortable for the eyes and is not even for anyone
+              to modify it or understand it.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact section">
+        <div>
+          <p class="contact__description">
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
+          </p>
+          <a class="contact__email" href="mailo:mazen.7acebat@gmail.com"
+            >mazen.7acebat@gmail.com</a
+          >
+          <div class="contact__socials">
+            <a
+              class="contact__social"
+              href="https://www.facebook.com/share/1FFDX66Bvn/"
+            >
+              <img src="./images/brand/facebook.svg" alt="icon of facebook" />
+            </a>
+            <a class="contact__social" href="https://github.com/Mazen-mo-10">
+              <img src="./images/brand/github.svg" alt="icon of github" />
+            </a>
+            <a
+              class="contact__social"
+              href="https://www.instagram.com/mazen.moohamed_10?igsh=MTRpOXZlM3o1NmZjeQ=="
+            >
+              <img
+                src="./images/brand/instagram.svg"
+                alt="icon of instagram.svg"
+              />
+            </a>
+            <a
+              class="contact__social"
+              href="https://www.linkedin.com/in/mazenmohamed2212/"
+            >
+              <img
+                src="./images/brand/LinkedIn.svg"
+                alt="icon of LinkedIn.svg"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="contact__formcontent">
+          <h2 class="h2-heading">
+            Let's Work<br />
+            Together!
+          </h2>
+
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input
+                class="contact__input"
+                name="fullname"
+                type="text"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                class="contact__input"
+                type="tel"
+                name="telephone"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <textarea
+              class="contact__input contact__textarea"
+              name="description"
+              id="description"
+              rows="1"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input class="contact__button" type="submit" value="Send Message" />
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">© 2025 by Mazen Mohamed</footer>
+    </div>
+  </body>
+</html>
