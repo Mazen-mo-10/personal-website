@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
     --background: 0 0% 98%;
@@ -151,10 +147,6 @@ All colors MUST be HSL.
   animation: smoothShine 5s ease-in-out infinite;
 }
 
-/* ===============================
-   🔹 Custom Scrollbar Styling
-   =============================== */
-
 html {
   scroll-behavior: smooth;
 }
@@ -165,46 +157,28 @@ html {
   height: 10px;
 }
 
-/* Track (الخلفية بتاعة الشريط) */
 ::-webkit-scrollbar-track {
   background: transparent;
   border-radius: 10px;
 }
 
-/* Thumb (المؤشر اللي بيتحرك) */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    180deg,
-    #06b6d4,
-    #0d9488
-  ); /* cyan-500 → teal-600 */
+  background: linear-gradient(180deg, #06b6d4, #0d9488);
   border-radius: 10px;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
 /* Hover effect */
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(
-    180deg,
-    #22d3ee,
-    #14b8a6
-  ); /* cyan-400 → teal-500 */
+  background: linear-gradient(180deg, #22d3ee, #14b8a6);
   transform: scaleX(1.2);
 }
-
-/* ===============================
-   🔸 Dark / Light Theme Adaptation
-   =============================== */
 @media (prefers-color-scheme: dark) {
   ::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.05);
   }
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(
-      180deg,
-      #0ea5e9,
-      #0d9488
-    ); /* cyan-500 → teal-600 */
+    background: linear-gradient(180deg, #0ea5e9, #0d9488);
   }
 }
 
@@ -213,14 +187,26 @@ html {
     background: rgba(0, 0, 0, 0.05);
   }
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(
-      180deg,
-      #22d3ee,
-      #14b8a6
-    ); /* cyan-400 → teal-500 */
+    background: linear-gradient(180deg, #22d3ee, #14b8a6);
   }
 }
 
 ::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 0 10px rgba(20, 184, 166, 0.6);
+}
+
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }

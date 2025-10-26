@@ -179,7 +179,16 @@ const Home = () => {
             {/* Profile Image */}
             <div className="flex-1 flex justify-center items-center animate-scale-in">
               <div className="relative flex items-center justify-center">
-                <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500 to-teal-500 opacity-25 blur-3xl rounded-full animate-glow" />
+                {/* Glow background */}
+                <div
+                  className="
+        absolute -inset-4 rounded-full blur-3xl animate-glow
+        dark:bg-gradient-to-r dark:from-cyan-500 dark:to-teal-500 dark:opacity-25
+        bg-gradient-to-r from-cyan-300 to-teal-300 opacity-30
+      "
+                />
+
+                {/* Profile image */}
                 <img
                   src={mazenPhoto}
                   alt="Mazen Mohamed Ali - Frontend Developer"
